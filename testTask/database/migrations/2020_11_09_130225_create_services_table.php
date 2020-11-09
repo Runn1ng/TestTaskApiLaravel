@@ -14,8 +14,12 @@ class CreateServicesTable extends Migration
     public function up()
     {
         Schema::create('services', function (Blueprint $table) {
-            $table->id();
-            $table->timestamps();
+            $table->engine = 'InnoDB';
+
+            $table->integer("ID", true)->length(11)->autoIncrement()->from(2);
+            $table->integer("user_id")->length(11);
+            $table->integer("tarif_id")->length(11);
+            $table->date("payday");
         });
     }
 
