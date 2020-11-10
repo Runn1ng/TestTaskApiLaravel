@@ -7,6 +7,8 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 
+use DB;
+
 class User extends Authenticatable
 {
     use HasFactory, Notifiable;
@@ -40,4 +42,8 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    public static function Exist($user_id){
+        return User::select()->where("ID", $user_id)->count() > 0;        
+    }
 }

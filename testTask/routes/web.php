@@ -13,7 +13,10 @@ use App\Http\Controllers\ApiController;
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::get('/users/{user_id}/services/{service_id}/tarifs', [ApiController::class, "GetServicesTarifs"]);
+
+Route::get('/test', function(){
+    return view("temp");
+});
 
 Route::get('/', function () {
     return view('welcome');
