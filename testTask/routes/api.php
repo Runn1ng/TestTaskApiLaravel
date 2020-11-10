@@ -14,7 +14,7 @@ use App\Http\Controllers\ApiController;
 | is assigned the "api" middleware group. Enjoy building your API!
 |
 */
-// GET /users/{user_id}/services/{service_id}/tarifs
+// GET /services/{service_id}/tarifs
 // PUT /users/{user_id}/services/{service_id}/tarif
 Route::get('/services/{service_id}/tarifs', [ApiController::class, "GetServicesTarifs"]);
 Route::put('/users/{user_id}/services/{service_id}/tarif', [ApiController::class, "PutServicesTarif"]);

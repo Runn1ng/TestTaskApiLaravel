@@ -14,7 +14,7 @@
 
 ## Задача: Написать код, реализующий API-запросы
 
-1. `GET /users/{user_id}/services/{service_id}/tarifs` - получает тарифы для конкретного сервиса.
+1. `GET /services/{service_id}/tarifs` - получает тарифы для конкретного сервиса.
     Тарифы могут быть только с тем же самым tarif_group_id, что и у текущего тарифа сервиса.
 2. `PUT /users/{user_id}/services/{service_id}/tarif` 
     Данные: `{"tarif_id": (ID тарифа из запроса на получениe тарифов)}`
