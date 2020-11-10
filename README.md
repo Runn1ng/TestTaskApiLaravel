@@ -1,21 +1,37 @@
 # Тестирование
-Протестировать api можно проверить зайдя на вашсайт/test
-Ответы на запросы выводятся в консоль
+ Протестировать api можно проверить зайдя на вашсайт/test.
+ Ответы на запросы выводятся в консоль
 
 # Обращение
 Обращение к GET-запросу `вашсайт/api/services/{service_id}/tarifs`
-  - response: ok
-  -- Возврщает json, содержащий данные о тарифах service_id
-  - respone: error. Причины: 
-  -- Тарифы по указанному service_id отсутствуют
-  -- Указанный service_id отсутствует
+<ul><li>response: ok
+  <ul><li>
+    Возврщает json, содержащий данные о тарифах service_id
+  </ul>
+  </li>
+  <li>
+  
+   respone: error. Причины: 
+  <ul>
+  <li>
+  Тарифы по указанному service_id отсутствуют
+  <li>
+  Указанный service_id отсутствует
+  </ul>
+  </li>
+  </ul>
+  </ul>
  
 Обращение к PUT-запросу `вашсайт/api/users/{user_id}/services/{service_id}/tarif`
-  - response: ok
-  - respone: error. Причины: 
-  -- Попытка изменить несуществующий user_id или service_id
-  -- Попытка задать tarif_id, который отсутствует у указанного service_id
-  -- service_id и user_id не находятся в одной строке
+<ul>
+  <li>response: ok
+  <li>respone: error. Причины:
+  <ul>
+    <li>Попытка изменить несуществующий user_id или service_id
+    <li>Попытка задать tarif_id, который отсутствует у указанного service_id
+    <li>service_id и user_id не находятся в одной строке
+  </ul>
+ </ul>
 
 
 
